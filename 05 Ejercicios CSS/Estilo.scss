@@ -1,0 +1,190 @@
+@font-face {
+
+    font-family: "SpecialElite";
+    src: url("../Fonts/SpecialElite-Regular.ttf");
+
+}
+
+$frioOscuro: #445e93;
+$frioClaro: #7eb2dd;
+$calidoFuerte: #f93943;
+$calidoSuave: #fcb0b3;
+$neutro: #f1ab13;
+
+html{
+
+    background-color: $frioClaro;
+    font-family: "SpecialElite";
+
+}
+
+h1 {
+
+    color: $calidoFuerte;
+    text-align: center;
+    font-size: 400%;
+
+}
+
+section{
+
+    background-color: $frioOscuro;
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid black;
+
+}
+
+h3 {
+
+    color: $neutro;
+    font-size: 250%;
+
+}
+
+p{
+
+    color: $calidoSuave;
+    font-size: 150%;
+
+}
+
+#Rounded{
+
+    border-radius: 1rem;
+
+}
+
+#BorderImage{
+
+    background-color: inherit;
+    padding: 0%;
+    border:50px solid transparent;
+    border-image: url("../Images/BorderImage.png") 20% round;
+
+    h3{
+
+        color: $calidoFuerte
+
+    }
+
+    p{
+
+        color: $frioOscuro
+
+    }
+
+}
+
+#BGImage{
+
+    background: url("../Images/background-image.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    p{
+
+        color:$calidoFuerte;
+
+    }
+
+}
+
+#Gradient{
+
+    background-image: linear-gradient(to bottom, $calidoFuerte, $calidoSuave);
+
+    h3{
+
+        color: $frioClaro;
+
+    }
+
+    p{
+
+        color: $frioOscuro;
+
+    }
+
+}
+
+#Shadow{
+
+    h3{
+
+        text-shadow: 2px 2px 3px $neutro;
+
+    }
+
+    p{
+
+        text-shadow: 1px 1px 2px $calidoSuave;
+
+    }
+
+}
+
+#VerticalWritting{
+
+    max-height: 15rem;
+    writing-mode: vertical-rl;
+
+}
+
+#overflow{
+
+    max-width: 50%;
+    max-height: 10%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#wrapping{
+
+    max-width: 50%;
+    max-height: 10%;
+    word-break: break-all;
+
+}
+
+#translate:hover{
+
+    transform: translate(50%, 0%);
+
+}
+
+#rotate:hover {
+
+    transform: rotate(30deg);
+
+}
+
+#rotateX:hover{
+
+    transform: rotateX(180deg);
+
+}
+
+#rotateY:hover{
+
+    transform: rotateY(180deg);
+
+}
+
+.cajita{
+
+    text-align: center;
+    height: 5rem;
+    width: 5rem;
+    background-color: $calidoFuerte;
+
+}
+
+.FlexRow{
+
+    display: flex;
+    flex-direction: row;
+
+}

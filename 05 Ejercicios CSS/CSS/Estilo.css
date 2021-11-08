@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "SpecialElite";
+  src: url("../Fonts/SpecialElite-Regular.ttf");
+}
+
+html {
+  background-color: #7eb2dd;
+  font-family: "SpecialElite";
+}
+
+h1 {
+  color: #f93943;
+  text-align: center;
+  font-size: 400%;
+}
+
+section {
+  background-color: #445e93;
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid black;
+}
+
+h3 {
+  color: #f1ab13;
+  font-size: 250%;
+}
+
+p {
+  color: #fcb0b3;
+  font-size: 150%;
+}
+
+#Rounded {
+  border-radius: 1rem;
+}
+
+#BorderImage {
+  background-color: inherit;
+  padding: 0%;
+  border: 50px solid transparent;
+  -o-border-image: url("../Images/BorderImage.png") 20% round;
+     border-image: url("../Images/BorderImage.png") 20% round;
+}
+
+#BorderImage h3 {
+  color: #f93943;
+}
+
+#BorderImage p {
+  color: #445e93;
+}
+
+#BGImage {
+  background: url("../Images/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#BGImage p {
+  color: #f93943;
+}
+
+#Gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f93943), to(#fcb0b3));
+  background-image: linear-gradient(to bottom, #f93943, #fcb0b3);
+}
+
+#Gradient h3 {
+  color: #7eb2dd;
+}
+
+#Gradient p {
+  color: #445e93;
+}
+
+#Shadow h3 {
+  text-shadow: 2px 2px 3px #f1ab13;
+}
+
+#Shadow p {
+  text-shadow: 1px 1px 2px #fcb0b3;
+}
+
+#VerticalWritting {
+  max-height: 15rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+#overflow {
+  max-width: 50%;
+  max-height: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#wrapping {
+  max-width: 50%;
+  max-height: 10%;
+  word-break: break-all;
+}
+
+#translate:hover {
+  -webkit-transform: translate(50%, 0%);
+          transform: translate(50%, 0%);
+}
+
+#rotate:hover {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#rotateX:hover {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+#rotateY:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cajita {
+  text-align: center;
+  height: 5rem;
+  width: 5rem;
+  background-color: #f93943;
+}
+
+.FlexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=Estilo.css.map */
