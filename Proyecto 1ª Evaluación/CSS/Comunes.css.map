@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAQA,UAAU;EAEN,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,wCAAwC;;;AAIjD,UAAU;EAEN,WAAW,EAAE,mBAAmB;EAChC,GAAG,EAAE,qCAAqC",
+    "sources": [
+        "Comunes.scss"
+    ],
+    "names": [],
+    "file": "Comunes.css"
+}

@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "SpecialElite";
+  src: url("../Fonts/SpecialElite-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Audiowide-Regular";
+  src: url("../Fonts/Audiowide-Regular.ttf");
+}
+
+HTML {
+  font-size: 6px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#501e5c), to(#941414));
+  background-image: linear-gradient(to bottom, #501e5c, #941414);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.1rem solid #201D1D;
+  background-color: #937EA5;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+
+nav a {
+  border: 0.1rem solid #201D1D;
+  background-color: #CCB2DC;
+  color: #941414;
+  text-decoration: none;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+footer {
+  font-size: 3rem;
+  background-color: #937EA5;
+  text-align: center;
+  border: 0.5rem solid #201D1D;
+  color: #201D1D;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #201D1D;
+}
+/*# sourceMappingURL=Movil.css.map */

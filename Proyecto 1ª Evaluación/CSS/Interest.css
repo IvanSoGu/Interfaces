@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "SpecialElite";
+  src: url("../Fonts/SpecialElite-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Audiowide-Regular";
+  src: url("../Fonts/Audiowide-Regular.ttf");
+}
+
+@media all and (max-width: 480px) {
+  @font-face {
+    font-family: "SpecialElite";
+    src: url("../Fonts/SpecialElite-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Audiowide-Regular";
+    src: url("../Fonts/Audiowide-Regular.ttf");
+  }
+  HTML {
+    font-size: 6px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#501e5c), to(#941414));
+    background-image: linear-gradient(to bottom, #501e5c, #941414);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 0.1rem solid #201D1D;
+    background-color: #937EA5;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+  }
+  nav a {
+    border: 0.1rem solid #201D1D;
+    background-color: #CCB2DC;
+    color: #941414;
+    text-decoration: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  footer {
+    font-size: 3rem;
+    background-color: #937EA5;
+    text-align: center;
+    border: 0.5rem solid #201D1D;
+    color: #201D1D;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  footer a {
+    text-decoration: none;
+    color: #201D1D;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 720px) {
+  @font-face {
+    font-family: "SpecialElite";
+    src: url("../Fonts/SpecialElite-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Audiowide-Regular";
+    src: url("../Fonts/Audiowide-Regular.ttf");
+  }
+  HTML {
+    font-size: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#501e5c), to(#941414));
+    background-image: linear-gradient(to bottom, #501e5c, #941414);
+    font-family: "SpecialElite";
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  nav {
+    border: 0.3rem solid #201D1D;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #937EA5;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav a {
+    padding: 1%;
+    border: 0.1rem solid #201D1D;
+    background-color: #CCB2DC;
+    margin-right: 3%;
+    margin-left: 3%;
+    color: #941414;
+    text-decoration: none;
+    border-radius: 1rem;
+  }
+  nav a:hover {
+    background-color: #201D1D;
+  }
+  footer {
+    font-size: 1.5rem;
+    background-color: #937EA5;
+    text-align: center;
+    border: 0.5rem solid #201D1D;
+    color: #201D1D;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  footer a {
+    text-decoration: none;
+    color: #201D1D;
+  }
+  footer a:hover {
+    color: #941414;
+  }
+}
+
+@media all and (min-width: 720px) {
+  @font-face {
+    font-family: "SpecialElite";
+    src: url("../Fonts/SpecialElite-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Audiowide-Regular";
+    src: url("../Fonts/Audiowide-Regular.ttf");
+  }
+  HTML {
+    font-size: 14px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#501e5c), to(#941414));
+    background-image: linear-gradient(to bottom, #501e5c, #941414);
+    font-family: "SpecialElite";
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  nav {
+    border: 0.3rem solid #201D1D;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #937EA5;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav a {
+    padding: 1%;
+    border: 0.1rem solid #201D1D;
+    background-color: #CCB2DC;
+    margin-right: 3%;
+    margin-left: 3%;
+    color: #941414;
+    text-decoration: none;
+    border-radius: 1rem;
+  }
+  nav a:hover {
+    background-color: #201D1D;
+  }
+  footer {
+    font-size: 1.5rem;
+    background-color: #937EA5;
+    text-align: center;
+    border: 0.5rem solid #201D1D;
+    color: #201D1D;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  footer a {
+    text-decoration: none;
+    color: #201D1D;
+  }
+  footer a:hover {
+    color: #941414;
+  }
+}
+
+article {
+  margin: 3%;
+  margin-top: 0%;
+  padding: 1%;
+}
+
+article h2 {
+  color: #CCB2DC;
+  font-size: 4rem;
+  text-align: center;
+}
+
+article p {
+  color: #937EA5;
+  font-size: 2rem;
+  text-align: left;
+}
+/*# sourceMappingURL=Interest.css.map */
