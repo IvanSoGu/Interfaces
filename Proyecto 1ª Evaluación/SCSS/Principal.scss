@@ -1,0 +1,227 @@
+@import "Comunes.scss";
+
+//MOVIL
+@media all and (max-width: 480px) {
+
+    @import "Movil.scss";
+
+}
+
+//TABLET
+@media all and (min-width: 480px) and (max-width: 720px) {
+
+    @import "Tablet.scss";
+
+}
+
+//ORDENADOR
+@media all and (min-width: 720px) {
+
+    @import "Ordenador.scss";
+    
+}
+
+//ETIQUETAS
+article{
+
+    margin:3%;
+    margin-top: 0%;
+    padding: 1%;
+
+    h2{
+
+        color: $MasSuave;
+        font-size: 4rem;
+        text-align: center;
+
+    }
+
+    p{
+
+        color: $Suave;
+        font-size: 2rem;
+        text-align: left;
+
+    }
+
+}
+
+@media all and (min-width: 1200px) {
+
+    //ID
+    #contenido{
+
+        display: grid; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(3);
+        grid-template-rows: 1;
+        grid-template-areas: 
+        
+            "izquierda main derecha"
+        
+        ;
+
+        main{
+
+            grid-area: main;
+
+        }
+
+    }
+
+    #left{
+
+        grid-area: izquierda;
+        margin-right: 2%;
+
+        img{
+
+            border: 0.5rem solid $Oscuro;
+            width: 400px;
+            height: 665px;
+
+        }
+
+    }
+
+    #right{
+
+        grid-area: derecha;
+        margin-left: 2%;
+
+        img{
+
+            border: 0.5rem solid $Oscuro;
+            width: 400px;
+            height: 665px;
+        }
+
+    }
+    
+}
+
+
+@media all and (min-width: 700px) and (max-width: 1200px) {
+
+    //ID
+    #contenido{
+
+        display: grid; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(3);
+        grid-template-rows: 1;
+        grid-template-areas: 
+        
+            "izquierda main derecha"
+        
+        ;
+
+        main{
+
+            grid-area: main;
+
+        }
+
+    }
+
+    #left{
+
+        grid-area: izquierda;
+        margin-right: 2%;
+
+        img{
+
+            border: 0.5rem solid $Oscuro;
+            max-width: 200px;
+            max-height: 330px;
+
+        }
+
+    }
+
+    #right{
+
+        grid-area: derecha;
+        margin-left: 2%;
+
+        img{
+
+            border: 0.5rem solid $Oscuro;
+            max-width: 200px;
+            max-height: 330px;
+
+        }
+
+    }
+    
+}
+
+@media all and (max-width: 700px) {
+
+    section{
+
+        margin-left: 4%;
+        margin-right: 4%;
+
+    }
+
+    //ID
+    #contenido{
+
+        display: grid; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        grid-template-areas: 
+        
+            "main"
+            "derecha"
+        
+        ;
+
+        main{
+
+            grid-area: main;
+
+        }
+
+    }
+
+    #left{
+
+        grid-area: izquierda;
+        margin-right: 2%;
+        display: none;
+
+        img{
+
+            border: 0.5rem solid $Oscuro;
+            width: 400px;
+            height: 665px;
+
+        }
+
+    }
+
+    #right{
+
+        grid-area: derecha;
+        margin-left: 2%;
+
+        img{
+
+            border: 0.5rem solid $Oscuro;
+            width: 400px;
+            height: 665px;
+
+        }
+
+    }
+
+}

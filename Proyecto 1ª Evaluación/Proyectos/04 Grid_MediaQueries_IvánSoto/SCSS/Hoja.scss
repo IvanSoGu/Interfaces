@@ -1,0 +1,218 @@
+$backgroundColor:rgb(0, 0, 0);
+$mobileFontColor: rgb(255, 255, 255);
+$otherFontColor: rgb(0, 0, 0);
+$gridBackgroundColor:rgb(29, 131, 214);
+
+//MOVIL
+//La resolución la he puesto mas baja de la que tiene mi telefono incluso, pero bueno, intuyo que es orientativa en este ejercicio
+@media only all and (max-width: 720px) {
+
+    #Contenedor {
+
+        background-color: $backgroundColor;
+
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 0.5rem;
+        border-radius: 1rem;
+
+        width: 90%;
+        margin: 4%;
+
+        grid-template-areas:
+
+            "header"
+            "main"
+            "aside"
+            "footer"
+
+        ;
+
+        #Header {
+
+            grid-area: header;
+            text-align: center;
+            background-color: blueviolet;
+            color: $mobileFontColor;
+        
+        }
+
+        #Main {
+
+            grid-area: main;
+            background-color: rgb(122, 122, 122);
+
+        }
+
+        #Aside {
+
+            grid-area: aside;
+            background-color: rgb(122, 122, 122);
+
+        }
+    
+        #Footer {
+
+            grid-area: footer;
+            text-align: center;
+            background-color: rgb(43, 43, 43);
+            color: $mobileFontColor;
+
+        }
+
+    }
+
+}
+
+//TABLET
+//Lo mismo, tambien orientativa
+@media only all and (min-width: 720px) and (max-width: 1480px){
+
+    #Contenedor {
+
+        background-color: $backgroundColor;
+
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        grid-gap: 0.5rem;
+        border-radius: 1rem;
+
+        width: 92%;
+        margin: 3%;
+
+        grid-template-areas:
+
+            "header header header"
+            "aside main main"
+            "aside main main"
+            "aside main main"
+            "footer footer footer"
+
+        ;
+
+        #Header {
+
+            grid-area: header;
+            text-align: center;
+            background-color: $gridBackgroundColor;
+            color: $otherFontColor;
+        
+        }
+
+        #Main {
+
+            grid-area: main;
+            background-color: $gridBackgroundColor;
+
+        }
+
+        #Aside {
+
+            grid-area: aside;
+            background-color: $gridBackgroundColor;
+
+        }
+
+        #Footer {
+
+            grid-area: footer;
+            text-align: center;
+            background-color: $gridBackgroundColor;
+            color: $otherFontColor;
+
+        }
+
+    }
+
+}
+
+@media only all and (min-width: 1480px){
+
+    #Contenedor {
+
+        background-color: $backgroundColor;
+
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        grid-gap: 0.5rem;
+        border-radius: 1rem;
+
+        width: 92%;
+        margin: 3%;
+
+        grid-template-areas:
+
+            "header header header"
+            "aside main main"
+            "aside main main"
+            "aside main main"
+            "footer footer footer"
+
+        ;
+
+        #Header {
+
+            grid-area: header;
+            text-align: center;
+            background-color: $gridBackgroundColor;
+        
+        }
+
+        #Main {
+
+            display: grid;
+            grid-area: main;
+            background-color: $gridBackgroundColor;
+
+            grid-template-areas:
+                
+                "Cabecera Cabecera"
+                "Articulo1 Articulo2"
+                "Articulo1 Articulo2"
+                
+            ;
+
+            #Cabecera{
+
+                grid-area: Cabecera;
+            
+            }
+    
+            #articulosMain1{
+                    
+                grid-area: Articulo1;
+                    
+            }
+            
+            #articulosMain2{
+                    
+                grid-area: Articulo2;
+
+                
+            }
+
+        }
+
+        #Aside {
+
+            grid-area: aside;
+            background-color: $gridBackgroundColor;
+
+        }
+
+        #Footer {
+
+            grid-area: footer;
+            text-align: center;
+            background-color: $gridBackgroundColor;
+
+        }
+
+    }
+
+}

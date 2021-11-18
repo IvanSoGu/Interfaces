@@ -1,0 +1,125 @@
+
+@font-face {
+
+    font-family: "Audiowide-Regular";
+    src: url("../Fonts/Audiowide-Regular.ttf");
+
+}
+
+@font-face {
+
+    font-family: "impact";
+    src: url("../Fonts/impact.ttf");
+
+}
+
+html{
+
+    font-size:62.5%;
+}
+
+body{
+
+    background-color: darkgrey;
+    font-family:"Audiowide-Regular";
+
+}
+
+header{
+
+    background-color: black;
+
+}
+
+nav{
+
+    text-align: center;
+    background-color: white;
+    font-size: 1.5rem;
+
+}
+
+main{
+
+    margin-left:2.5rem;
+
+}
+
+section{
+
+    margin: 1.5rem;
+
+}
+
+h2{
+
+    
+    display: block;
+    margin: 4rem;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px blue;
+
+}
+
+p{
+
+    display: block;
+    font-size: 1.2rem;
+
+}
+
+li{
+
+    display: block;
+    font-size: 1.2rem;
+
+}
+
+h3{
+
+    
+    display: block;
+    font-size: 2rem;
+
+}
+
+footer{
+    
+    display: block;
+    text-align:center;
+    font-family:impact;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+}
+
+#Aula{
+
+    display: flex;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    border: 3px solid black;
+    border-radius: 4px;
+    padding: 1px;
+
+}
+
+#texto{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#PMImagen{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#MiClase{
+
+    max-width: 100rem;
+
+}

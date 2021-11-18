@@ -1,0 +1,164 @@
+@media only all and (max-width: 720px) {
+  #Contenedor {
+    background-color: black;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    border-radius: 1rem;
+    width: 90%;
+    margin: 4%;
+        grid-template-areas: "header" "main" "aside" "footer";
+  }
+  #Contenedor #Header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+  }
+  #Contenedor #Main {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: main;
+    background-color: #7a7a7a;
+  }
+  #Contenedor #Aside {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: aside;
+    background-color: #7a7a7a;
+  }
+  #Contenedor #Footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: footer;
+    text-align: center;
+    background-color: #2b2b2b;
+    color: white;
+  }
+}
+
+@media only all and (min-width: 720px) and (max-width: 1480px) {
+  #Contenedor {
+    background-color: black;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+    border-radius: 1rem;
+    width: 92%;
+    margin: 3%;
+        grid-template-areas: "header header header" "aside main main" "aside main main" "aside main main" "footer footer footer";
+  }
+  #Contenedor #Header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: header;
+    text-align: center;
+    background-color: #1d83d6;
+    color: black;
+  }
+  #Contenedor #Main {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+    background-color: #1d83d6;
+  }
+  #Contenedor #Aside {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: aside;
+    background-color: #1d83d6;
+  }
+  #Contenedor #Footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    text-align: center;
+    background-color: #1d83d6;
+    color: black;
+  }
+}
+
+@media only all and (min-width: 1480px) {
+  #Contenedor {
+    background-color: black;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+    border-radius: 1rem;
+    width: 92%;
+    margin: 3%;
+        grid-template-areas: "header header header" "aside main main" "aside main main" "aside main main" "footer footer footer";
+  }
+  #Contenedor #Header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: header;
+    text-align: center;
+    background-color: #1d83d6;
+  }
+  #Contenedor #Main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+    background-color: #1d83d6;
+        grid-template-areas: "Cabecera Cabecera" "Articulo1 Articulo2" "Articulo1 Articulo2";
+  }
+  #Contenedor #Main #Cabecera {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: Cabecera;
+  }
+  #Contenedor #Main #articulosMain1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: Articulo1;
+  }
+  #Contenedor #Main #articulosMain2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: Articulo2;
+  }
+  #Contenedor #Aside {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: aside;
+    background-color: #1d83d6;
+  }
+  #Contenedor #Footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    text-align: center;
+    background-color: #1d83d6;
+  }
+}
+/*# sourceMappingURL=Hoja.css.map */

@@ -1,0 +1,30 @@
+@import "Comunes.scss";
+
+//MOVIL
+@media all and (max-width: 480px) {
+
+    @import "Movil.scss";
+
+}
+
+//TABLET
+@media all and (min-width: 480px) and (max-width: 720px) {
+
+    @import "Tablet.scss";
+
+}
+
+//ORDENADOR
+@media all and (min-width: 720px) {
+
+    @import "Ordenador.scss";
+    
+}
+
+section{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+}

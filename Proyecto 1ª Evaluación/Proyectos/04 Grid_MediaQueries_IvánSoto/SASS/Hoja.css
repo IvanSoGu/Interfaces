@@ -1,0 +1,179 @@
+#Contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: black;
+      grid-template-areas: "header header header" "main main main" "main main main" "main main main" "aside aside aside" "footer footer footer";
+}
+
+#Contenedor #Header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: teal;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#Contenedor #Aside {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: aside;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: teal;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#Contenedor #Main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  grid-gap: 2rem;
+  background-color: teal;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "Cabeceras Cabecera" "Articulo1 Articulo1" "Articulo2 Articulo2";
+}
+
+#Contenedor #Main #Cabecera {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Cabecera;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: aquamarine;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#Contenedor #Main #articulosMain1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Articulo1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+#Contenedor #Main #articulosMain2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Articulo2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+#Contenedor #Footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: teal;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/*MOVIL*/
+@media only screen and (min-width: 480px) {
+  #Contenedor {
+        grid-template-areas: "header header header" "aside aside aside" "main main main" "main main main" "main main main" "footer footer footer";
+  }
+  #Contenedor #Main {
+        grid-template-areas: "Cabecera Cabecera" "Articulo1 Articulo1" "Articulo2 Articulo2";
+  }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 768px) {
+  #Contenedor {
+        grid-template-areas: "header header header" "aside main main" "aside main main" "aside main main"  "aside main main" "footer footer footer";
+  }
+  #Contenedor #Main {
+        grid-template-areas: "Cabeceras Cabecera" "Articulo1 Articulo1" "Articulo2 Articulo2";
+  }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 992px) {
+  #Contenedor {
+        grid-template-areas: "header header header" "aside main main" "aside main main" "aside main main"  "aside main main" "footer footer footer";
+  }
+  #Contenedor #Main {
+        grid-template-areas: "Cabeceras Cabecera" "Articulo1 Articulo2" "Articulo1 Articulo2";
+  }
+}
+/*# sourceMappingURL=Hoja.css.map */

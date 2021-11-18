@@ -1,0 +1,146 @@
+@font-face {
+
+    font-family: "Audiowide-Regular";
+    src: url("../Fonts/Audiowide-Regular.ttf");
+
+}
+
+@font-face {
+
+    font-family: "impact";
+    src: url("../Fonts/impact.ttf");
+
+}
+
+@font-face {
+
+    font-family: "SpecialElite";
+    src: url("../Fonts/SpecialElite-Regular.ttf");
+
+}
+
+body{
+
+    background-color: darkgrey;
+
+}
+
+header{
+    
+    background-color:#170031c2;
+
+}
+
+nav{
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+nav > li {
+
+    float: left;
+    
+}
+
+nav li{
+
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+nav li ul{
+
+    display: none;
+    list-style: none;
+
+}
+
+
+nav li a:hover{
+
+    background-color: #434343;
+
+}
+
+nav li:hover > ul{
+
+    display:block;
+
+}
+
+main{
+
+    margin-left: 50px;
+
+}
+
+section{
+
+    margin:50px;
+    margin-top: 100px;
+
+}
+
+h2{
+
+    font-family: "Audiowide-Regular";
+    color:#170031c2;
+    font-size: 40px;
+
+}
+
+p{
+
+    font-family: "SpecialElite";
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+address{
+
+    background-color:#170031c2;
+    border: 2px solid black;
+    color: white;
+    font-family: "impact";
+    font-size: 40px;
+    margin: 80px;
+    padding: 20 px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+  
+.overflow-ellipsis {
+
+    text-overflow: ellipsis;
+
+}
+
+#imagenHeader{
+
+    height: 374px;
+    width: 885px;
+
+}
+
+#flex{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#flex img {
+
+    height: 250px;
+    width: 200px;
+
+}

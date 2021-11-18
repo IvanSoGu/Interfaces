@@ -1,0 +1,277 @@
+@import "Comunes.scss";
+
+//MOVIL
+@media all and (max-width: 480px) {
+
+    @import "Movil.scss";
+
+}
+
+//TABLET
+@media all and (min-width: 480px) and (max-width: 720px) {
+
+    @import "Tablet.scss";
+
+}
+
+//ORDENADOR
+@media all and (min-width: 720px) {
+
+    @import "Ordenador.scss";
+    
+}
+
+#primera{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+h2{
+
+    margin-top:8%;
+    color: $MasSuave;
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+#enlace{
+
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+
+    a{
+    
+        text-align: center;
+        font-family: "Audiowide-Regular";
+        font-size: 5rem;
+        text-decoration: none;
+        color: $MasSuave;
+        border: 1px solid $Oscuro;
+        border-radius: 2rem;
+        padding: 1%;
+        background-color: $Oscuro;
+        margin: 10%;
+        margin-top: 5%;
+    
+    }
+    
+    a:hover{
+    
+        color: $Calido;
+        background-color: $MasSuave;
+    
+    }
+
+}
+
+@media all and (max-width: 480px) {
+
+    #primera{
+
+        img{
+
+            height: 50px ;
+            width: 75px;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 135px ;
+            width: 215px;
+    
+        }
+    
+    }
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 695px) {
+
+    #primera{
+
+        img{
+
+            height: 100px ;
+            width: 150px;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 270px ;
+            width: 430px;
+    
+        }
+    
+    }
+    
+}
+
+@media all and (min-width: 695px) and (max-width: 910px) {
+
+    #primera{
+
+        img{
+
+            height: 150px ;
+            width: 225px;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 405px ;
+            width: 645px;
+    
+        }
+    
+    }
+    
+}
+
+@media all and (min-width: 910px) and (max-width:1125px) {
+
+    #primera{
+
+        img{
+
+            height: 200px ;
+            width: 300px;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 540px ;
+            width: 860px;
+    
+        }
+    
+    }
+    
+}
+
+@media all and (min-width: 1125px) and (max-width:1340px) {
+
+    #primera{
+
+        img{
+
+            height: 250px ;
+            width: 375px;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 675px ;
+            width: 1075px;
+    
+        }
+    
+    }
+    
+}
+
+@media all and (min-width: 1340px) and (max-width:1555px) {
+
+    #primera{
+
+        img{
+
+            height: 300px ;
+            width: 450px;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 810px ;
+            width: 1290px;
+    
+        }
+    
+    }
+    
+}
+
+@media all and (min-width: 1555px) and (max-width: 1770px) {
+
+    #primera{
+
+        img{
+
+            height: 350px ;
+            width: 525px;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 945px ;
+            width: 1505px;
+    
+        }
+    
+    }
+    
+}
+
+@media all and (min-width: 1770px){
+
+    #primera{
+
+        img{
+
+            height: 400px ;
+            width: 600x;
+
+        }
+
+    }
+
+    #segunda{
+
+        img{
+    
+            height: 1080px ;
+            width: 1720px;
+    
+        }
+    
+    }
+    
+}
