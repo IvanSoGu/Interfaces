@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Apuntes Multimedia </title>
+
+        <link rel="icon" type="image/png" sizes="512x512" href="Images/MultimediaFavicon.png">
+
+        <link rel="stylesheet" type="text/css" href="CSS/Hoja.css" />
+
+        <script type="text/JavaScript">
+
+            function dibujar() {
+    
+                var milienzo = document.getElementById("canvas");
+                var micontexto = milienzo.getContext("2d");
+                var i=0;
+                var x=5;
+                var y=5;
+                var ancho = 300;
+                var alto = 250;
+                for (i=0;i<=25;i++) {
+                micontexto.strokeStyle="#"+Math.floor(Math.random()*16777215).toString(16);
+                micontexto.strokeRect(x,y,ancho,alto);
+                x=x+5;
+                y=y+5;
+                ancho=ancho-10;
+                alto=alto-10;
+                }
+            }
+        
+        </script>
+        
+    </head>
+
+    <body onload="JavaScript:dibujar();">
+
+        <nav>
+
+            
+
+        </nav>
+
+        <main>
+
+            <article>
+
+                <section>
+
+                    <p id="Keyframe">
+
+                        ¡BIENVENID@!
+
+                    </p>
+
+                    <div id="contenedor">
+
+                        <img class="Imagen" id="ImagenVectorial" src="Images/Eye_icon.svg" alt="Imagen vectorial">
+
+                        <div class="overlay"> 
+                        
+                            <img class="Licencia" src="Images/Licencia Eye_Icon.png" alt="Licencia CC - BY - SA">
+    
+                            "Eye icon 08.svg" por "Nevit Dilmen (talk)"
+    
+                        </div>
+                        
+                        <img class="Imagen" id="ImagenBitMap" src="Images/EyeBitMap.jpg" alt="Imagen de mapa de bits">
+    
+                        <div class="overlay"> 
+                        
+                            <img class="Licencia" src="Images/Licencia EyeBitMap.png" alt="Licencia CC - BY">
+    
+                            "eye" por "Sean MacEntee" 
+    
+                        </div>
+
+                    </div>
+
+                    <div id="Video">
+
+                        <iframe src="https://player.vimeo.com/video/237291?h=68d915999b" width="640" height="512" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    
+                        <p>
+                            
+                            <a href="https://vimeo.com/237291">Eyes</a> from <a href="https://vimeo.com/conor"> Conor </a> on <a href="https://vimeo.com"> Vimeo </a>.
+                        
+                        </p>
+    
+
+                    </div>
+
+                    <audio controls>
+                    
+                        <source src="Audio/Rain.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        
+                    </audio>
+
+                    <canvas id="canvas" width="300" height="300"> </canvas>
+
+                    <div id="contenedor2">
+
+                        <picture>
+
+                            <source srcset="Images/EyesLandscapeSmall.jpg" media="(max-width: 40em) and (orientation: landscape)">
+                            <source srcset="Images/EyesPortraitSmall.jpg" media="(max-width: 40em) and (orientation: portrait)">
+                            <source srcset="Images/EyesDefaultLandscape.jpg" media="(min-width: 40em) and (orientation: landscape)">
+                            <source srcset="Images/EyesDefaultPortrait.jpg" media="(min-width: 40em) and (orientation: portrait)">
+                            <img srcset="Images/EyesDefaultLandscape.jpg" alt="My default image">
+    
+                        </picture>
+    
+                        <div class="overlay">
+    
+                            <img class="Licencia" src="Images/Licencia EyeBitMap.png" alt="Licencia CC - BY">
+    
+                            "My Eyes" por "ttfnrob"
+    
+                        </div>
+
+                    </div>
+                        
+                </section>
+
+            </article>
+
+        </main>
+
+        <footer>
+
+            <address>
+
+                <p>
+                    
+                    Iván Soto
+
+                    <a href="mailto:IvanSoGu@gmail.com" id="email">
+
+                        IVANSOGU@GMAIL.COM
+
+                    </a>
+
+                </p>
+
+                <p>
+
+                    You can find me in: 
+
+                    <a href="https://www.google.es/maps/place/IES+Tetu%C3%A1n+de+las+Victorias/@40.4726793,-3.6971381,18.5z/data=!4m5!3m4!1s0xd422912c3f95711:0xfd6d0a1eb67bcfc!8m2!3d40.4731818!4d-3.697599">
+
+                        Room 207
+
+                    </a>
+
+                </p>
+
+            </address>
+
+        </footer>
+        
+    </body>
+
+</html>
