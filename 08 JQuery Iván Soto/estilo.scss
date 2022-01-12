@@ -1,0 +1,58 @@
+body{
+
+    background-color: azure;
+    text-align: center;
+    color: azure;
+
+    main{
+
+        display:grid;
+        grid-auto-rows: auto;
+        grid-auto-flow: dense;
+        gap: 5%;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        
+        section{
+
+            background-color: black;
+            border-radius: 1%;
+            padding: 2%;
+
+            form{
+
+                text-align: left;
+
+            }
+
+            #ej3{
+                    
+                position: relative;
+                    
+            }
+
+            .asiglabel{
+
+                color:green;
+
+            }
+
+        }
+
+    }
+
+    address{
+
+        background-color:#170031c2;
+        border: 2px solid black;
+        color: white;
+        font-size: 3rem;
+        margin: 10%;
+        padding: 5%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+    
+    }
+
+}
+

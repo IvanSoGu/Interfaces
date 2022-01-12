@@ -1,0 +1,46 @@
+body {
+  background-color: azure;
+  text-align: center;
+  color: azure;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 5%;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+
+body main section {
+  background-color: black;
+  border-radius: 1%;
+  padding: 2%;
+}
+
+body main section form {
+  text-align: left;
+}
+
+body main section #ej3 {
+  position: relative;
+}
+
+body main section .asiglabel {
+  color: green;
+}
+
+body address {
+  background-color: #170031c2;
+  border: 2px solid black;
+  color: white;
+  font-size: 3rem;
+  margin: 10%;
+  padding: 5%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*# sourceMappingURL=Estilo.css.map */
